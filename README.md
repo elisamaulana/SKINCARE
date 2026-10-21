@@ -1,18 +1,34 @@
-# React + Vite
+# 💄 Proyek Aplikasi Skincare React Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplikasi web interaktif berbasis React dan Vite yang menampilkan daftar profil mahasiswa serta katalog produk/kartu skincare dengan komponen modular.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📸 Tangkapan Layar Aplikasi
+*(Opsional: Anda bisa melampirkan screenshot tampilan aplikasi web Anda di sini)*
+![Tampilan Aplikasi](./src/assets/screenshot.png)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧩 Daftar Komponen Beserta Props
 
-## Expanding the Oxlint configuration
+Aplikasi ini dibangun menggunakan beberapa komponen utama:
+1. **`App.jsx`** (Komponen Utama / Parent)
+   - Mengelola state utama dan data array `daftarMahasiswa`.
+2. **`KartuProfil.jsx`** (Komponen Anak / Child)
+   - Berfungsi untuk merender kartu informasi mahasiswa.
+   - **Props yang diterima:**
+     - `nama` (string): Nama lengkap mahasiswa.
+     - `peran` (string): Jurusan atau peran mahasiswa.
+     - `tahun` (number): Tahun angkatan masuk.
+     - `aktif` (boolean): Status keaktifan mahasiswa.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-# Proyek Skincare React Vite
-Catatan: Penambahan fitur filter kategori untuk pengujian pull request.
+---
+
+## 🚀 Cara Menjalankan Proyek
+
+Ikuti langkah-langkah di bawah ini untuk menjalankan proyek secara lokal di komputer Anda:
+
+1. **Clone repositori ini:**
+   ```bash
+   git clone [https://github.com/elisamaulana/SKINCARE.git](https://github.com/elisamaulana/SKINCARE.git)
